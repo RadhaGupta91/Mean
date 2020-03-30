@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "contactDirectory",
+		"_postman_id": "f766aa23-b815-0e4d-bdae-7e00b1532f24",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"url": "http://localhost:3000/contact",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"url": "http://localhost:3000/contact",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "radhika",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "946441624632",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test Description",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "http://localhost:3000/contact",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "id",
+						"value": "12",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
